@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	      printf("wcat: cannot open file\n");
 	      exit(1);
 	    }
-	  char buffer[1024];
+	  char buffer[BUFFER_SIZE];
 	  while(fgets(buffer, BUFFER_SIZE, fp) != NULL)
 	    {
 	      printf("%s", buffer);
